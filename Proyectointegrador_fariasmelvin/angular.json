@@ -28,10 +28,11 @@
             ],
             "styles": [
               "src/styles.css",
-            "Proyectointegrador_fariasmelvin/node_modules/bootstrap/dist/css/bootstrap.css"  
+            "node_modules/bootstrap/dist/css/bootstrap.css"  
             ],
-            "scripts": []
-            "Proyectointegrador_fariasmelvin/node_modules/bootstrap/dist/js/bootstrap.js"
+            "scripts": [
+            "node_modules/bootstrap/dist/js/bootstrap.js"
+      ]
           },
           "configurations": {
             "production": {
