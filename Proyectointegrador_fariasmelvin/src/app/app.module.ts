@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule  } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -13,6 +13,7 @@ import { ExperienciaComponent } from './components/experiencia/experiencia.compo
 import { EducacionComponent } from './components/educacion/educacion.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HysComponent } from './components/hys/hys.component';
+import { ProyectoComponent } from './components/proyecto/proyecto.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { HysComponent } from './components/hys/hys.component';
     AcercaDeComponent,
     ExperienciaComponent,
     EducacionComponent,
-    HysComponent,    
+    HysComponent,
+    ProyectoComponent,    
   ],
   imports: [
     BrowserModule,
