@@ -1,18 +1,26 @@
 .row{
-    padding: 30px;
+    padding: 0% 0% 5% 10%;
+    border: 3px solid #5e4b456c;
+    background-color: hsla(14, 46%, 75%, 0.424);
+   
 }
 div{
     background: #9b918d6c;
 }
 h3{
     margin-top: 2%;
+
 }
 h4, h5{
- font-style: normal; 
+ font-style: normal;
+ margin-top: 2%;
+ margin-right: 0%; 
    
 }
 h1{
-margin-top: %;
-margin-left: 5%;
-margin-bottom: 2%;    
+
+margin-top: 2%;
+margin-left: 0%;
+margin-bottom: 2%;
+text-decoration: underline rgb(116, 115, 115);  
 }

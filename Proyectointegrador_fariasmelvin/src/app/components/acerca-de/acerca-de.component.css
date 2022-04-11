@@ -1,5 +1,7 @@
 .row{
-  padding: 30px
+  padding: 3% 0% 0% 0%;
+    border: 0px solid #5e4b456c;
+    background-color: hsla(14, 46%, 75%, 0.424);
 
 }
 div{
@@ -33,11 +35,18 @@ div{
 /*etiqueta de nombre*/
 #nombre{
     font-weight: bold ;
-    margin-top: 40%; 
+    margin-top: 20%; 
 }
 
 /*etiqueta de Acerca de*/
 #titulo{
-    margin-top: 5%;
+    margin-top: 2%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+p{
+  margin-right: 5%;
+  margin-left: 5%;
 }
 
