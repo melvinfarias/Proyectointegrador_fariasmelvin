@@ -27,7 +27,7 @@ div{
       border-radius: 100%;
       box-shadow: 3px 3px 3px  grey;
       left: 30%;
-      top: 800px; 
+      top: 1000px; 
     }   
  }
 
@@ -43,6 +43,7 @@ div{
     margin-top: 2%;
     margin-left: 0%;
     margin-right: 0%;
+    text-shadow: 5px 5px 5px grey;
 }
 
 p{
