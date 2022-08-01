@@ -3,34 +3,46 @@ package com.portafolio.mgfr.services;
 import com.portafolio.mgfr.models.Experiencia;
 import com.portafolio.mgfr.repository.IntExpRepo;
 import java.util.List;
+import java.util.Optional;
+import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
+
 
 @Service
 @Transactional
 public class ExpService {
-    private final IntExpRepo intExpRepo;
-    
+
     @Autowired
-    public ExpService(IntExpRepo intExpRepo) {
-        this.intExpRepo = intExpRepo;
-    }
+    IntExpRepo intExpRepo;
     
-    public Experiencia addExperiencia(Experiencia experiencia) {
-        return intExpRepo.save(experiencia);
-    }
-    
-    public List<Experiencia> buscarExperiencia() {
+    public List<Experiencia> list() {
         return intExpRepo.findAll();
     }
     
-    public Experiencia editarExperiencia(Experiencia experiencia) {
-        return intExpRepo.save(experiencia);
+    public Optional<Experiencia> getOne(int id) {
+        return intExpRepo.findById(id);
     }
     
-    public void borrarExperiencia(Long id) {
-        intExpRepo.deleteById(id);
-    }    
+    public Optional<Experiencia> getByTituloExp(String tituloExp){
+        return intExpRepo.findByTituloExp(tituloExp);
+        
+    }
     
+    public void save(Experiencia expe){
+      intExpRepo.save(expe);
+    }
+    
+    public void delete(int id){
+        intExpRepo.deleteById(id);
+    }
+    
+    public boolean existsById(int id){
+        return intExpRepo.existsById(id);
+    }
+    
+    public boolean existsByTituloExp(String tituloExp){
+        return intExpRepo.existsBytituloExp(tituloExp);
+    }
+     
 }

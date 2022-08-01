@@ -1,40 +1,26 @@
 <div class="row">
     <h1>Experiencia laboral</h1>
-    <div class="col-lg-}"></div>
-    <div class="col-lg-11">
-             
-        <ul>
-            <li>
-                <h3>Inbroker</h3> <h4>Asistente administrativo (Arg)</h4> <h5>6 Meses</h5> 
-            </li>
-            <p>
-                Recepción de llamadas, registro y control de facturas en el sistema administrativo Tango,seguimiento de pagos a proveedores, registro y envío de encomiendas, responsable de caja chica y compras de material de oficina e insumos requeridos por el área de operaciones para las sedes administrativas y plantas así como el control y archivo de la respectiva documentación.
-            </p>
+    <div class=""col-lg-2>
+        <button type="button">
 
-        </ul>
-
-        <ul>
-            <li>
-                <h3>Dayco Telecom</h3> <h4>Analista de logística (Vzla)</h4> <h5>2 Años</h5> 
-            </li>
-            <p>
-                Atención al público, manejo del conmutador, contacto con proveedores, recepción de facturas,responsable de gestión de transporte de ambas sedes de la empresa con su debida logística de catering y reservas de hospedaje nacional e internacional así como llevar el control de dichas solicitudes.
-            </p>
-
-        </ul>
-
-        <ul>
-            <li>
-                <h3>Laboratorios Clinilab</h3> <h4>Asistente Administrativo (Vzla)</h4> <h5>2 Años</h5> 
-            </li>
-            <p>
-                Recepción de facturas y control de pagos a proveedores, llevar agenda del sub gerente programando reuniones y visitas de entes gubernamentales y realizar pagos de impuestos y visitas a la alcaldía.
-            </p>
-
-        </ul>
-
+        </button>
 
     </div>
 
+    <div class= "col lg 1"></div>
+    <div class="col-lg-11">
 
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Experiencia of expe">
+                    <td>{{Experiencia.tituloExp}}</td>
+                    <td>{{Experiencia.descExp}}</td>
+                    <td>EDITAR</td>
+                    <td>BORRAR</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
 </div>
+
